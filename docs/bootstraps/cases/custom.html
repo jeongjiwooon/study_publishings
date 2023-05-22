@@ -1,22 +1,137 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML - Check Out</title>
 </head>
+
 <body>
     <form action="./toy_publishings.html">
         <div>
-            <input type="email" name="myemail" id="idemail">
-            <label for="idemail">Email address</label>
+            <label for="idfirstname">first name</label>
+            <input type="text" name="myfirstname" id="idfirstname" placeholder="sanghun">
         </div>
         <div>
-            <input type="password" name="mypassword" id="idpassword">
-            <label for="idpassword">Password</label>
+            Valid first name is requiresd.
         </div>
-        <button type="submit">click</button>
-        <button type="reset">reset</button>
+        <div>
+            <label for="idlastname">last name</label>
+            <input type="text" name="mylastname" id="idlastname" placeholder="oh">
+        </div>
+        <div>
+            Valid first name is requiresd.
+        </div>
+        <div>
+            Username
+        </div>
+        <div>
+            <label for="idusername"></label>
+            <input type="text" name="myusername" id="idusername" placeholder="Username">
+        </div>
+        <div>
+            Your username is required.
+        </div>
+        <div>
+            <label for="idemail">email (Optional)</label>
+            <input type="email" name="myemail" placeholder="you@example.com" id="idemail">
+        </div>
+        <div>
+            Please enter a valied email address for shipping updates.
+        </div>
+        <div>
+            <label for="idaddress">address</label>
+            <input type="text" name="myaddress" id="idaddress" placeholder="1234 Main St">
+        </div>
+        <div>
+            Please enter your shipping address.
+        </div>
+        <div>
+            <label for="idaddress2">address 2 (Optional)</label>
+            <input type="text" name="myaddress2" id="idaddress2" placeholder="Apartment or suite">
+        </div>
+        <div>
+            country
+            <select name="Country" id="Country">
+                <option value selected="">Choose...</option>
+                <option value="France">프랑스</option>
+                <option value="Italy">이탈리아</option>
+                <option value="Brazil">브라질</option>
+            </select>
+        </div>
+        <div>
+            Please select a vailed country.
+        </div>
+        <div>
+            state
+            <select name="State" id="State">
+                <option value selected="">Choose...</option>
+                <option value="Paris">파리</option>
+                <option value="Rome">로마</option>
+                <option value="Brasilia">브라질리아</option>
+            </select>
+        </div>
+        <div>
+            Please select a valid state.
+        </div>
+        <div>
+            <label for="idzip">zip</label>
+            <input type="text" name="myzip" id="idzip">
+        </div>
+        <div>
+            Zip code required.
+        </div>
+        <hr>
+        <div>
+            <input type="checkbox" name="mycheck" id="idcheck">
+            <label for="idcheck">shippingaddress is the same as my billing address</label>
+        </div>
+        <div>
+            <input type="checkbox" name="mycheck" id="idcheck2">
+            <label for="idcheck2">savethis information for next time</label>
+        </div>
+        <hr>
+        <h3>Payment</h3>
+        <div>
+            <input type="radio" name="payment" id="credit card" value="credit card">
+            <label for="credit card">Credit card</label>
+        </div>
+        <div>
+            <input type="radio" name="payment" id="debit card" value="debit card">
+            <label for="debit card">Debit card</label>
+        </div>
+        <div>
+            <input type="radio" name="payment" id="paypal" value="paypal">
+            <label for="paypal">Paypal</label>
+        </div>
+        <div>
+            name on card
+            <input type="text" name="cardname">
+            Full name as displayed on card
+        </div>
+        <div>
+            Name on card is required
+        </div>
+        <div>
+            credit card number
+            <input type="text" name="cardnumber">
+        </div>
+        <div>
+            Credit card number is required
+        </div>
+        <div>
+            expiration
+            <input type="month" name="expiration">
+        </div>
+        <div>
+            Expiration date required
+        </div>
+        <div>
+            CVV:
+            <input type="password" name="CVV">
+        </div>
+        <div>
+            <h5><button type="submit">Continue to Checkout</button></h5>
+        </div>
     </form>
 </body>
+
 </html>
